@@ -1,0 +1,153 @@
+.body {
+  margin: 0%;
+  background-color: rgb(212, 201, 184);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+section {
+  flex: 1;
+  min-height: 100%;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  text-decoration: solid;
+  font-size: larger;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.oneliner {
+  text-align: center;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: aliceblue;
+  float: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.nav-Home {
+  color: black;
+  text-decoration: solid;
+  padding: 10px;
+}
+.nav-AboutMe {
+  color: black;
+  text-decoration: solid;
+  padding: 10px;
+}
+.nav-Projects {
+  color: black;
+  text-decoration: solid;
+  padding: 10px;
+}
+.nav-Contact {
+  color: black;
+  flex: 1;
+  text-align: right;
+  text-decoration: solid;
+  padding: 10px;
+}
+
+.Me {
+  justify-content: space-between;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-right: 10px;
+}
+
+.Picture {
+  float: right;
+}
+
+.Welcome {
+  color: black;
+  margin-left: 25px;
+}
+
+.AboutMeParagraph {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer-icons {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  float: none;
+  align-items: baseline;
+  -webkit-box-align: stretch;
+  justify-content: center;
+}
+
+.foot-Handshake {
+  padding: 0 30px 0 30px;
+}
+
+@media screen and (min-width: 200px) {
+  .body {
+    background-color: rgb(212, 201, 184);
+    width: 100%;
+  }
+
+  .Picture {
+    width: auto;
+    height: auto;
+  }
+
+  .Project-Title {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .Project-Name {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .Vitrual-Pet {
+    vertical-align: baseline;
+  }
+  .fizzbuzzqix {
+    vertical-align: text-top;
+  }
+
+  .mohamedPortfolio {
+    vertical-align: text-bottom;
+  }
+  .About-Title {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .Email{
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
