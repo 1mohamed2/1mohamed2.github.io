@@ -1,9 +1,13 @@
 .body {
+  box-sizing: border-box;
   margin: 0%;
-  background-color: rgb(212, 201, 184);
+  padding: 0;
+  background: rgb(3, 5, 5);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 main {
@@ -31,16 +35,15 @@ section {
 
 .navbar {
   display: flex;
-  background-color: aliceblue;
-  float: none;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content:space-evenly;
+  background-color: aliceblue;
   -webkit-box-align: stretch;
-  align-items: stretch;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
+  
 }
 
-.nav-Home {
+ .nav-Home {
   color: black;
   text-decoration: solid;
   padding: 10px;
@@ -54,32 +57,41 @@ section {
   color: black;
   text-decoration: solid;
   padding: 10px;
+  
 }
-.nav-Contact {
+.navContactWord {
   color: black;
-  flex: 1;
-  text-align: right;
   text-decoration: solid;
   padding: 10px;
-}
+} 
+
 
 .Me {
-  justify-content: space-between;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding-right: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: bold;
+  margin: 15px;
 }
 
 .Picture {
+  max-width: 99%;
+  max-height: 99%;
   float: right;
+  margin-top: .6ch;
+  height: 20%;
+  
 }
 
+.paragraphAboutMe {
+  justify-content: center;
+  margin-top: 80px;
+  font-size: large;
+}
 .Welcome {
   color: black;
-  margin-left: 25px;
-}
-
-.AboutMeParagraph {
-  text-align: left;
+  margin-left: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -89,9 +101,13 @@ section {
   padding: 10px;
 }
 
-footer {
+.footer{
   bottom: 0;
+  left: 0;
+  position: fixed;
   width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .footer-icons {
@@ -110,7 +126,7 @@ footer {
 
 @media screen and (min-width: 200px) {
   .body {
-    background-color: rgb(212, 201, 184);
+    background-color: black;
     width: 100%;
   }
 
@@ -132,6 +148,7 @@ footer {
   }
   .Vitrual-Pet {
     vertical-align: baseline;
+    text-decoration: none;
   }
   .fizzbuzzqix {
     vertical-align: text-top;
@@ -139,15 +156,25 @@ footer {
 
   .mohamedPortfolio {
     vertical-align: text-bottom;
+    color: white;
+    font-size:larger;
+    display: flex;
+    justify-content: center;
+    margin: .7%;
+    text-decoration: solid;
   }
   .About-Title {
     text-align: center;
     justify-content: center;
     font-family: Georgia, "Times New Roman", Times, serif;
   }
-  .Email{
-    text-align: center;
+  .fsTitle{
+    display: flex;
     justify-content: center;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: Georgia;
+  }
+  .fsPics{
+    display: flex;
+    justify-content: center
   }
 }
